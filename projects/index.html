@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="dante barbieri projects portfolio">
+  <meta name="author" content="Dante Barbieri">
+
+  <title>Dante's Projects</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="../vendor/fontawesome-free/css/all.css" rel="stylesheet">
+  <link href="../vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+  <link href="../https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <!-- Custom styles for this template -->
+  <link href="../css/landing-page.css" rel="stylesheet">
+
+  <!-- p5.js Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.min.js"></script>
+  
+  <!-- My Ball Bounce Program -->
+  <script src="../sketches/ball-bounce/ball.js"></script>
+  <script src="../sketches/ball-bounce/box.js"></script>
+
+  <!-- My Traveling Salesman Program -->
+  <!-- (No Includes Necessary) -->
+
+  <!-- My Orbital Art Program -->
+  <script src="../sketches/orbital-art/mass.js"></script>
+  <script src="../sketches/orbital-art/orbiter.js"></script>
+  <script src="../sketches/orbital-art/ring.js"></script>
+
+  <!-- Sketch to Load the 3 Above Programs I wrote -->
+  <script src="../sketches/sketch.js"></script>
+
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-dark bg-dark static-top">
+    <div class="container">
+      <a class="navbar-brand" href="http://www.dantebarbieri.com/">Dante's Personal Website</a>
+      <a class="btn btn-primary" href="https://github.com/pulchroxloom">Dante's GitHub</a>
+    </div>
+  </nav>
+
+  <!-- Project-head -->
+  <header class="project-head text-light text-center">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <h1 class="mb-5">Dante's Projects</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-14 col-md-3" style="width: 50%; margin: 0 auto;">
+          <a class="btn btn-primary" href="http://dantebarbieri.com">dantebarbieri.com</a>
+        </div>
+        <div class="col-14 col-md-3" style="width: 50%; margin: 0 auto;">
+          <a class="btn btn-primary" href="https://github.com/pulchroxloom">github.com/pulchroxloom</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Icons Grid -->
+  <section class="features-icons bg-dark text-light text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+            <div class="features-icons-icon d-flex">
+              <i class="icon-home m-auto text-primary"></i>
+            </div>
+            <h3>Home</h3>
+            <a class="lead mb-0" href="../">This takes you back to my landing page.</a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+            <div class="features-icons-icon d-flex">
+              <i class="icon-user m-auto text-primary"></i>
+            </div>
+            <h3>About Me</h3>
+            <a class="lead mb-0" href="../about me/">Brief introduction to me, Dante Barbieri.</a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+            <div class="features-icons-icon d-flex">
+              <i class="icon-badge m-auto text-primary"></i>
+            </div>
+            <h3>Volunteer Service</h3>
+            <a class="lead mb-0" href="../service/">Things I have done to help out my community.</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Description -->
+  <section class="header bg-dark text-light">
+    <div class="container-fluid p-0">
+      <div class="row no-gutters col-xl-9 mx-auto">
+        <h2>
+          I mostly do small projects when I have an idea and many of these projects have made it to <a href="https://github.com/pulchroxloom/">my GitHub</a>. Sometimes I write code in <a href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a> and I'm able to host it on my website: <a href="http://dantebarbieri.com/">dantebarbieri.com</a>. Below are three of my favorite JavaScript demos integrated directly into this page. Please note that your mouse has to be over the canvas for it to listen to keyboard and mouse events, so any listed controls will only work if you have your mouse cursor over the canvas.
+        </h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image Showcases -->
+  <section class="showcase bg-dark text-light">
+    <div class="container-fluid p-0">
+      <div class="row no-gutters">
+        <div class="col-lg-6 order-lg-2 text-white">
+          <div id="ball-bounce-div" class="text-white showcase-img" style="background-color: rgb(102, 102, 102); width: inherit; height:96%;"></div>
+          <div class="text-white" style="background-color: rgb(102, 102, 102);">
+            <span>Approximate Percent Energy Retained:</span> <span id="impulse-span"></span><span>&percnt;</span>
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+          <h2>3D Ball Bounce</h2> <a class="btn btn-secondary" href="https://github.com/pulchroxloom/3D_Ball_Bounce">Link to GitHub Repository</a>
+          <p class="lead mb-0">This is my attempt to simulate the 3D physics of a ball inside of a box. You can rotate the scene with the mouse and other keyboard controls are below:<br>
+            <p>LEFT Click &dash; Accelerate the ball vertically (think of it somewhat like dribbling in Basketball).<br>
+              L &dash; Toggle unit velocity vectors for the ball.<br>
+              K &dash; Toggle the shadow underneath the ball.<br>
+              B &dash; Bounce the ball upwards.<br>
+              WASD &dash; Move the ball forwards, left, backwards, and right, respectively.<br>
+              Brackets ([/]) &dash; Decrease/Increase the impulse of the ball.<br>
+              Plus/Minus (+/-) &dash; Zoom in/out (press and hold).<br>
+              </p>
+        </p>
+        </div>
+      </div>
+      <div class="row no-gutters">
+        <div id="travelling-salesman-div" class="col-lg-6 text-white showcase-img" style="background-color: black;"></div>
+        <div class="col-lg-6 my-auto showcase-text">
+          <h2>Traveling Salesman Bogo/Bozo Solver</h2> <a class="btn btn-secondary" href="https://github.com/pulchroxloom/traveling_salesman">Link to GitHub Repository</a>
+          <p class="lead mb-0">This solver attempts to find the shortest route between the 12 shown points. It could do this iteratively by checking every solution, but instead it randomly checks switching 2 paths, 3 paths, 4 paths, etc. all of the way up to randomly switching all 12 paths and testing the distance. This can more quickly approach a correct solution than can an iterative solver at the cost of not being able to halt and return a definitively shortest path.</p>
+        </div>
+      </div>
+      <div class="row no-gutters">
+        <div id="orbital-art-div" class="col-lg-6 order-lg-2 text-white showcase-img" style="background-color: black;"></div>
+        <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+          <h2>Orbital Art</h2> <a class="btn btn-secondary" href="http://dantebarbieri.com/orbital_art/">Link to Web Hosting</a>
+          <p class="lead mb-0">This physics simulation has small objects with mass and larger orbiting objects that are massless. The massless orbiters feel the effect of the primaries (objects around which other objects orbit) and choose which primary to orbit based on Newtonian Universal Gravitation. Controls:
+            <p>LEFT Click &dash; Create a new primary.<br>
+              C &dash; Clear the canvas of the art.<br>
+              A &dash; Toggle auto-clearing of the art.<br>
+              X &dash; Remove the most recently added primary.<br>
+              Plus/Minus (+/-) &dash; Add or remove an orbiter.<br>
+              Brackets ([/]) &dash; Change the length of the ring trials (Warning: Long trails really hurt performance!).<br>
+              M &dash; Toggle visibility of primaries.<br>
+            </p>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer bg-dark text-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+          <ul class="list-inline mb-2">
+            <li class="list-inline-item">
+              <a href="../about me/">About</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a href="mailto:dantevbarbieri@gmail.com">Contact</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a href="https://en.wikipedia.org/wiki/MIT_License#License_terms">Terms of Use</a>
+            </li>
+          </ul>
+          <p class="text-muted small mb-4 mb-lg-0">&copy; Dante Barbieri 2019. All Rights Reserved.</p>
+        </div>
+        <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item mr-3">
+              <a href="https://www.linkedin.com/in/dante-barbieri-3b60a6173">
+                <i class="fab fa-linkedin fa-2x fa-fw"></i>
+              </a>
+            </li>
+            <li class="list-inline-item mr-3">
+              <a href="https://twitter.com/barbieri_dante">
+                <i class="fab fa-twitter-square fa-2x fa-fw"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/pulchroxloom">
+                <i class="fab fa-github fa-2x fa-fw"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
