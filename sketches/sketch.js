@@ -319,7 +319,7 @@ let orbital_art = function(p) {
     }
     else if ((p.key == "=" || p.key == "+") && p.mouseOnCanvas()) {
       let r = p.random(25, 35);
-      orbiters.push(new Orbiter(p, r, 2 * r / 3, 4 * r / 3, p.random(5, 25), 1, p.createVector(p.random(p.width / 5, 4 * p.width / 5), random(p.height / 5, 4 * p.height / 5))));
+      orbiters.push(new Orbiter(p, r, 2 * r / 3, 4 * r / 3, p.random(5, 25), 1, p.createVector(p.random(p.width / 5, 4 * p.width / 5), p.random(p.height / 5, 4 * p.height / 5))));
     }
     else if ((p.key == "-" || p.key == "_") && p.mouseOnCanvas()) {
       orbiters.pop();
